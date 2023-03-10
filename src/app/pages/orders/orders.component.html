@@ -1,0 +1,23 @@
+<div *ngIf="balance$ | async as balance; else noBalance">
+  <app-customer-message></app-customer-message>
+  <div class="input-group mb-3">
+    <input type="number" class="form-control" #order />
+    <div class="input-group-append">
+      <button
+        class="btn btn-outline-secondary"
+        type="button"
+        (click)="addOrder(order)"
+        [disabled]="balance <= 0"
+      >
+        Add order
+      </button>
+    </div>
+  </div>
+  <!-- <input #order type="number" />
+  <button (click)="addOrder(order)" [disabled]="balance <= 0">add order</button> -->
+</div>
+<ng-template #noBalance>
+  <h2>Insufficient Balance, please add.</h2>
+</ng-template>
+
+<app-order-list></app-order-list>

@@ -1,0 +1,35 @@
+.nav {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: rgb(243, 243, 238);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.nav ul li a {
+  display: block;
+}
+
+.nav li {
+  margin: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul li a:hover {
+  color: #1976d2;
+  transform: scale(1.1);
+}
+
+.nav .active {
+  color: #1976d2;
+  transform: scale(1.1);
+}

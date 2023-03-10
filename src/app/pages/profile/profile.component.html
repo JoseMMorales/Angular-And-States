@@ -1,0 +1,14 @@
+<h3>Please type your Name:</h3>
+<div class="input-group mb-3">
+  <input type="text" class="form-control" #name />
+  <div class="input-group-append">
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="save(name.value)"
+    >
+      Save
+    </button>
+  </div>
+</div>
+<span *ngIf="name$ | async as nameSaved">{{ nameSaved }}</span>

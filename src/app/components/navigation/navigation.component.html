@@ -1,0 +1,39 @@
+<!-- <div class="nav">
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <a [routerLink]="['']">Home</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['payments']">Payments</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['orders']">Orders</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['profile']">Profile</a>
+    </li>
+  </ul>
+</div> -->
+
+<div class="nav">
+  <ul>
+    <li>
+      <a
+        routerLinkActive="active"
+        [routerLink]="['']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLinkActive="active" [routerLink]="['payments']">Payments</a>
+    </li>
+    <li>
+      <a routerLinkActive="active" [routerLink]="['orders']">Orders</a>
+    </li>
+    <li>
+      <a routerLinkActive="active" [routerLink]="['profile']">Profile</a>
+    </li>
+  </ul>
+</div>

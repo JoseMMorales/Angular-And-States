@@ -1,0 +1,24 @@
+<div *ngIf="customerInfo$ | async as customer">
+  <ng-container *ngIf="customer.name && customer.balance; else elseif1">
+    <h2>
+      Hey! {{ customer.name }}, your balance is
+      {{ customer.balance | currency }}
+    </h2>
+  </ng-container>
+  <ng-template #elseif1>
+    <ng-container *ngIf="customer.name; else elseif2">
+      <h2>Hey! {{ customer.name }}, add balance please</h2>
+    </ng-container>
+  </ng-template>
+  <ng-template #elseif2>
+    <ng-container *ngIf="customer.balance; else else1">
+      <h2>
+        Please add your name, your balance is
+        {{ customer.balance | currency }}
+      </h2>
+    </ng-container>
+  </ng-template>
+  <ng-template #else1>
+    <h2>Please add your name and balance</h2>
+  </ng-template>
+</div>

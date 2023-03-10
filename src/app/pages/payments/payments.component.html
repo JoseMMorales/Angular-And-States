@@ -1,0 +1,16 @@
+<h2>Add balance:</h2>
+<div class="input-group mb-3">
+  <input type="number" class="form-control" #payment />
+  <div class="input-group-append">
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="updateBalance(payment)"
+    >
+      Update
+    </button>
+  </div>
+</div>
+<span *ngIf="balance$ | async as balance"
+  >You current Balance is: {{ balance$ | async | currency }}
+</span>
