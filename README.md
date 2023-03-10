@@ -1,4 +1,4 @@
-# <div align="center">[![My Skills](https://skillicons.dev/icons?i=angular)](https://skillicons.dev) [![My Skills](https://skillicons.dev/icons?i=ts)](https://skillicons.dev) Angular And States[![My Skills](https://skillicons.dev/icons?i=rxjs)](https://skillicons.dev)[![My Skills](https://skillicons.dev/icons?i=bootstrap)](https://skillicons.dev)</div>
+# <div align="center">[![My Skills](https://skillicons.dev/icons?i=angular)](https://skillicons.dev) [![My Skills](https://skillicons.dev/icons?i=ts)](https://skillicons.dev) Angular And States [![My Skills](https://skillicons.dev/icons?i=rxjs)](https://skillicons.dev)[![My Skills](https://skillicons.dev/icons?i=bootstrap)](https://skillicons.dev)</div>
 
 Communication in Angular is really important when building an Angular App, we usually communicate parent-children components adding Input/Output events on. However, when our App starts to grow either with routing or in number of components, we opt to go for services with RxJs to do this implementation.
 
