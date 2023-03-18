@@ -1,8 +1,8 @@
 # <div align="center">[![My Skills](https://skillicons.dev/icons?i=angular)](https://github.com/JoseMMorales/Angular-And-States) [![My Skills](https://skillicons.dev/icons?i=ts)](https://github.com/JoseMMorales/Angular-And-States) Angular And States [![My Skills](https://skillicons.dev/icons?i=rxjs)](https://github.com/JoseMMorales/Angular-And-States) [![My Skills](https://skillicons.dev/icons?i=bootstrap)](https://github.com/JoseMMorales/Angular-And-States)</div>
 
-Communication in Angular is really important when building an Angular App, we usually communicate parent-children components adding Input/Output events on. However, when our App starts to grow either with routing or in number of components, we opt to go for services with RxJs to do this implementation.
+Communication between components in Angular is really important when building an Angular App, we usually communicate parent-children components adding Input/Output events on. However, when our App starts to grow either with routing or in number of components, we opt to go for services with RxJs to do this implementation.
 
-These services are based on a Behavior Subject property and subscription ([AsObservable](https://rxjs.dev/api/index/class/Subject)) in order to get the data asynchronoulsy. But if the requirements increase due to reaction/service needed in several components this technique sometimes is quite difficult to maintain on a long-term basis.
+These services are based on a Behavior Subject property and subscription ([AsObservable](https://rxjs.dev/api/index/class/Subject)) in order to get the data asynchronoulsy. But if the reaction/services increase in several components this technique sometimes is quite difficult to maintain on a long-term basis.
 
 That's why AppService has been built for, to avoid multiple injections of different services in any single component, it is acting as a bridge combining multiple behavior Subjects placed in different services.
 
@@ -22,7 +22,7 @@ As I mentioned above, single services are needed to save state of each section, 
 
 ### 💻 **Bridge Service** 💻
 
-Centralizing all our Behavior Subjects will provide all states in the App just calling one service, we will provide a single entry creating AppService to expose customerAndBalance$ in a single object, which is very straight forward to handle when retrieving the data in any component.
+Centralizing all the Behavior Subjects will provide all states in the App just calling one service, we will provide a single entry creating AppService to expose customerAndBalance$ in a single object, which is very straight forward to handle when retrieving the data in any component.
 
 <div align="center">
 <img width="485" alt="service" src="https://user-images.githubusercontent.com/43299285/223952462-cd4f95e2-34e3-44b1-9152-3fdb98153db2.PNG">
